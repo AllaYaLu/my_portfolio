@@ -1,0 +1,652 @@
+@font-face {
+    font-family: 'TildaSans';
+    font-style: normal;
+    font-weight: 300;
+    src: url("./fonts/TildaSans-Light.ttf") format("ttf");
+    
+}
+
+@font-face {
+    font-family: 'TildaSans';
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/TildaSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'TildaSans';
+    font-style: normal;
+    font-weight: 500;
+    src: url("./fonts/TildaSans-Medium.ttf") ;
+    
+}
+
+@font-face {
+    font-family: 'TildaSans';
+    font-style: normal;
+    font-weight: 600;
+    src: url("./fonts/TildaSans-Semibold.ttf") ;
+    
+}
+
+@font-face {
+    font-family: 'TildaSans';
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/TildaSans-Bold.ttf");
+    
+}
+
+@font-face {
+    font-family: 'TildaSans';
+    font-style: normal;
+    font-weight: 800;
+    src: url("./fonts/TildaSans-ExtraBold.ttf");
+    
+}
+
+@font-face {
+    font-family: 'TildaSans';
+    font-style: normal;
+    font-weight: 900;
+    src: url("./fonts/TildaSans-Black.ttf");
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+.menu {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 40%;
+
+}
+
+.menu-list {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.container-but {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item {
+    list-style: none;
+    margin-left: 3rem;
+}
+
+.menu-link {
+    font-family: "TildaSans", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 36px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    font-family: "TildaSans", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 36px;
+    color: black;
+    text-decoration: none;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.contacts{
+    font-family: "TildaSans", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 27px;
+    border: 2px solid #ff9235;
+    padding: 9px 22px;
+    border-radius: 15px;
+    margin: 0;
+    background-color: #fff;
+    color: #ff9235;
+    
+
+}
+
+.contacts:hover {
+    font-family: "TildaSans", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 0.5rem;
+    border: 2px solid #ff9235;
+    padding: 9px 22px;
+    border-radius: 15px;
+    margin: 0;
+    background-color: #ff9235;
+    color:#fff;
+   
+    cursor: pointer;
+
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prezentation {
+    width: 100%;
+    margin: 5rem;
+    padding: 0;
+
+}
+
+.prezentation-conainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prezentation-heading,
+.greetin-heading,
+.scills-heading,
+.projects-heading,
+.feedback-heading{
+    font-family: 'TildaSans', sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    text-transform: uppercase;
+    line-height: 81px;
+}
+
+.prezentation-post,
+.greatimg-about-me {
+    font-family: 'TildaSans', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    opacity: 0.7;
+    text-align: center;
+    width: 500px;
+}
+
+.prezentation-icon {
+    width: 650px;
+}
+
+.greetin {
+    width: 100%;
+    height: 470px;
+    background-color: #5DD9C8;
+}
+
+.greeting-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selfi {
+    display: block;
+    position: relative;
+    margin-bottom: -10%;
+    width: 200px;
+    height: 250px;
+    border: 2px solid #5DD9C8;
+}
+
+.greatimg-about-me {
+    width: 750px;
+}
+
+.scills {
+    margin-top: 15rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sills-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.scills-development {
+    font-family: "TildaSans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    width: 23%;
+    height: 1000px;
+    padding: 1rem;
+    border: 1px solid #5DD9C8;
+    border-radius: 12px 0px 0px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.design{
+    font-family: "TildaSans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    width: 23%;
+    height:1000px;
+    padding: 1rem;
+    border-top: 1px solid #5DD9C8;
+    border-bottom:1px solid #5DD9C8 ;
+    
+}
+.design-container,
+.soft-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.soft {
+    font-family: "TildaSans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    width: 23%;
+    height:1000px;
+    padding: 1rem;
+    border: 1px solid #5DD9C8;
+    border-radius: 0px 12px 12px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.icon{
+    width: 45px;
+    
+}
+.scill-heading,
+.design-heading,
+.soft-heading{
+    font-family: "TildaSans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+
+}
+.scills-descrition,
+.desine-description,
+.soft-description,
+.feedbeack-description{
+    font-family: "TildaSans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+}
+.languige-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -1rem;
+}
+.languig-item{
+    list-style: none;
+    
+}
+.skills-languige,
+.tools,
+.design-toos,
+.soft-scills{
+    font-family: 'TildaSans', sans-serif;
+    font-size: 20px;
+    color: #FF9235;
+}
+.tools{
+    text-align: center;
+}
+.tools-list,
+.design-tools-list,
+.soft-skills-list{
+    font-family: "TildaSans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+}
+.tools-item,
+.design-tools-item,
+.soft-scills-item{
+    list-style: none;
+    
+}
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.projects-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+.skrinshot{
+    width: 270px;
+    height: 200px;
+    border-radius: 12px;
+    border: 3px solid #8063A6;
+}
+.project-first,
+.project-second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.to-github{
+    font-family: 'TildaSans', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    width: 350px;
+    height: 50px;
+    margin-top: 2rem;
+    border-radius: 15px;
+    border: 2px solid #FF9235;
+    color: #FF9235;
+    background-color: #fff;
+    
+} 
+.to-github:hover{
+    color:  #fff;
+    background-color:#FF9235;
+    cursor: pointer;
+}
+.call-to-action{
+    width: 100%;
+    height: 200px;
+    background-color: #5DD9C8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.call-to-action-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.call-to-action-heading,
+.decision{
+    display: flex;
+    
+}
+.connection{
+    width: 100%;
+}
+.connection-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
+    
+}
+.icon-write{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.write{
+    width: 400px;
+}
+.connection-form{
+    width: 45%;
+    padding-right: 5rem;
+   display: grid;
+   grid-template-columns: 25% 15% 15% 25%;
+   grid-row: 5% 25% 5% 1fr 20% 10% ;
+   gap: 1rem;
+}
+.label-name{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+ #name{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    border: 1px solid #FF9235;
+    border-radius: 12px;
+ }
+ .label-email{
+    grid-column: 3/5;
+    grid-row: 1/2;
+ }
+ #email{
+    height: 30px;
+    grid-column: 3/5;
+    grid-row: 2/3;
+    border: 1px solid #FF9235;
+    border-radius: 12px;
+ }
+ .label-tz{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+ }
+ textarea{
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    border: 1px solid #FF9235;
+    border-radius: 12px;
+ }
+ input[type="submit"]{
+    grid-column: 4/5;
+    grid-row: 5/6;
+    border: 2px solid #FF9235;
+    border-radius:15px;
+    color: #FF9235;
+    padding: 2%;
+    background-color: #fff;
+ }
+.feedback{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mini-selfi{
+    width: 200px;
+    height: 170px;
+    border:2px solid #5DD9C8;
+    border-radius: 12px;
+}
+.feedback-text{
+    font-family: 'TildaSans', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+.name-use,
+.location{
+    font-family: 'TildaSans', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: -15px;
+}
+.container-arrow{
+    margin-top: 1.5rem;
+    
+}
+.left,
+.right{
+    border: 2px solid #FF9235;
+    border-radius:15px;
+    color: #FF9235;
+    background-color: #fff;
+}
+.proposal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: -5rem;
+    z-index: 1;
+}
+.proposal-container{
+    width: 80%;
+    height: 100%;
+    background-color: #8063A6;
+    color: #fff;
+    border-radius: 12px;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.proposal-headind{
+    font-family: 'TildaSans', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    align-self: center;
+    width: 250px;
+    
+}
+.proposal-description{
+    font-family: 'TildaSans', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    width: 450px;
+    align-self: center;
+    margin-right: 1rem;
+    margin-left: -1rem;
+}
+.call{
+    font-family: 'TildaSans', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    background-color: #8063A6;
+    color: #fff;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    width: 200px;
+    height: 70px;
+    padding: 5px;
+    align-self: center;
+}
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #5DD9C8;
+    
+
+}
+.container-soc{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 7rem;
+    
+}
+.soc{
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+}
+.autors{
+    width: 100%;
+    height: 200px;
+    display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+}
+.autor-list{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+}
+.author-item{
+list-style: none;
+}
+.author-item a{
+    text-decoration: none;
+    color: black;
+}
