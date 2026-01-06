@@ -207,7 +207,7 @@ html{
 }
 
 .prezentation-icon {
-    width: 650px;
+    width: 750px;
 }
 
 .greetin {
@@ -329,6 +329,9 @@ html{
     text-align: center;
 }
 .languige-list{
+    font-family: "TildaSans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
